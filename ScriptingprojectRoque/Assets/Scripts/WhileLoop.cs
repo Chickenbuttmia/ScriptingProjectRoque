@@ -2,19 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LooppingTime : MonoBehaviour
+public class WhileLoop : MonoBehaviour
 {
-    int numEnemies = 3;
-    
+    int cupsInTheSink = 4;
 
-
-    
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < numEnemies; i++)
+        while(cupsInTheSink > 0)
         {
-            Debug.Log("Creating enemy number: " + i);
+            Debug.Log("I've washed a cup!");
+            cupsInTheSink--;
         }
     }
 
